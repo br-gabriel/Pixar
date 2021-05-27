@@ -1,0 +1,17 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;/*provisorio*/
+
+    background: #0a0b10 url("../img/soul-background.jpg") no-repeat center fixed;
+    background-size: 55%;
+}
+
+.display img {
+    margin-top: 13em;
+    max-width: 45%;
+}

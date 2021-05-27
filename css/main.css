@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Josefin Sans, serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 7.5em;
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 1210px) {
+
+    header {
+        display: inline-block;
+        height: 3.75em;
+        width: 100%;
+        /*position: fixed;*/
+    }   
+}
+

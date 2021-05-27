@@ -1,0 +1,27 @@
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 1em;
+    color: #4d4b4b;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+footer a:hover {
+    color: #4d4b4b66;
+}
+
+footer span {
+    color: #4d4b4b;
+}
+
+.copyrights {
+    display: inline-block;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    color: #4d4b4b;
+}

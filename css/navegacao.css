@@ -1,0 +1,134 @@
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a{
+    color: #1d1d1d;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu ul li a:hover{
+    color: #1d1d1d66;
+}
+
+/*Sub menu*/
+.menu ul ul{
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    left: 0;
+}
+
+.menu ul  li:hover ul{
+    visibility: visible;
+    background-color: #1d1d1d;
+}
+
+.menu ul ul li a{
+    display: block;
+    color: white;
+}
+
+.menu ul ul li a:hover{
+    color: #ffffff66;
+    transition: all .3s;
+}
+
+/*Menu responsivo*/
+label[for="btn-menu"] {
+    background-color: #fff;
+    color: #1d1d1d;
+
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+
+    width: 45px;
+    height: 45px;
+
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+/*----------------------------------------*/
+@media (max-width: 1210px) {
+
+    header img {
+        margin-top: 5px;
+        margin-right: auto;  
+        margin-left: 10%;    
+    } 
+    
+    label[for="btn-menu"] {
+        display: inline;
+        margin-left: auto; 
+        margin-right: 10%;
+        margin-top: 8px;
+        float: right;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin-left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menu {
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 400px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    label[for="btn-menu"] {
+        width: 35px;
+        height: 35px;
+        
+        font-size: 25px;
+        margin-top: 12px;
+    }
+
+    header img {
+        margin-top: 13px;
+        margin-right: auto;  
+        margin-left: 10%;
+        width: 30%;    
+    } 
+
+}
+
+@media (max-width: 320px) {
+
+    header img {
+        margin-top: 16px;   
+    } 
+
+}

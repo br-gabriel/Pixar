@@ -1,0 +1,56 @@
+.cards {
+    margin-top: 9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+.cards a img {  
+    display: inline-block;
+    margin-left: auto;
+    width: 80%;
+    background-color: white;
+}
+
+.cards div span {
+    display: inline-block;
+    margin: 2em auto 1em;
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10em 0 7em 0;
+}
+
+.social-medias img {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0 .5em;
+    align-items: center;
+}
+
+@media (max-width: 765px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4em;
+    }
+
+    .cards img {
+        width: 69%; /*95%*/
+    }
+}
