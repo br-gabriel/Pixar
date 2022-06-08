@@ -5,9 +5,9 @@
     justify-content: center;
 
     height: 100%;
-    width: 100%;/*provisorio*/
+    width: 100%;
 
-    background: #0a0b10 url("../img/soul-background.jpg") no-repeat center;
+    background: #0a0b10 url("../img/soul-background.jpg") no-repeat center/cover;
     background-size: 55%;
 }
 
