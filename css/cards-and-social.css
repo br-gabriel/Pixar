@@ -46,7 +46,21 @@
     margin: 10em 0 7em 0;
 }
 
-.social-medias img {
+.social-media-box a {
+    display: inline-block;
+}
+
+.social-media-box {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.social-media-box a:hover {
+    filter: opacity(0.5);
+    transition: .2s;
+}
+
+.social-media-box a img {
     height: 1.5em;
     width: 1.5em;
     margin: 0 .5em;
